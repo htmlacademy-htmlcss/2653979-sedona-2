@@ -2,6 +2,7 @@
 
 * Студент: [Vadim Voronin](https://up.htmlacademy.ru/htmlcss-individual/2/user/2653979).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Проект: [Ссылка на проект](https://vadimvoronin3831.github.io/2653979-sedona-2/).
 
 ---
 
