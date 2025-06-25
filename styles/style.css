@@ -127,37 +127,49 @@ body {
 
 
 .nav {
-  position: relative;
+  padding: 0 70px;
   display: flex;
   justify-content: space-between;
+  column-gap: 30px;
+  height: 64px;
+  overflow: visible;
+  z-index: 2;
+  position: relative;
 }
 
-.nav .logo {
-  position: absolute;
-  top: 0;
-  left: 70px;
-  z-index: 2;
+
+.logo img {
+  display: block;
 }
 
 .nav-list-pages-link {
   display: flex;
   max-width: 700px;
-  margin-right: auto;
-  margin-left: 238px;
+  /* margin-right: auto; */
 }
 
-.nav-list-pages-link .nav-link {
+.nav-list-pages-link .nav-item {
   padding: 20px 16px;
   text-align: center;
   vertical-align: middle;
   display: block;
+  position: relative;
+}
+.nav-link-active::after {
+  content: "";
+  background-color: var(--color-brown);
+  width: calc(100% - 32px);
+  height: 2px;
+  position: absolute;
+  left: 16px;
+  bottom: 0;
 }
 
 .nav-list-user {
   display: flex;
   align-items: center;
   max-width: 268px;
-  margin-right: 70px;
+  margin-left: auto;
 }
 
 .nav-list-pages-link .nav-link {
@@ -202,7 +214,7 @@ body {
 
 .advantages {
   text-align: center;
-  margin-top: 69px;
+  padding-top: 69px;
 }
 
 .advantages-title {
@@ -210,15 +222,17 @@ body {
   margin: 0 auto 25px;
 }
 
-.advantages-item:not(:first-child),
-.advantages-item:not(:last-child) {
+.advantages-item-third {
+  display: flex;
+}
+.advantages-item-third .advantages-item{
   width: 400px;
 }
 
 .advantages-description {
   color: var(--color-gray);
-  margin-top: 0;
-  margin-bottom: 90px;
+  margin: 0 auto 90px;
+  max-width: 80%;
 }
 
 .advantages-item-description {
@@ -228,12 +242,6 @@ body {
   font-size: 18px;
 }
 
-.advantages-item:first-child .advantages-item-title,
-.advantages-item:last-child .advantages-item-title,
-.advantages-item:first-child .advantages-item-description,
-.advantages-item:last-child .advantages-item-description {
-  color: var(--color-white);
-}
 
 .advantages-item {
   display: flex;
@@ -243,24 +251,35 @@ body {
   padding: 112px 0;
 }
 
-.advantages-item:nth-child(1),
-.advantages-item:nth-child(5) {
+.text-left-img-right,
+.text-right-img-left {
   padding: 0;
   flex-direction: row;
   background-color: var(--color-blue);
   display: flex;
   width: auto;
+  color: var(--color-white);
+}
+.text-left-img-right .advantages-item-description,
+.text-right-img-left .advantages-item-description {
+  color: var(--color-white);
+}
+.text-right-img-left .advantages-item-wrapper{
+  order: 2;
 }
 
-.advantages-item:nth-child(2),
-.advantages-item:nth-child(4) {
+.advantages-item-third .advantages-item:nth-child(1),
+.advantages-item-third .advantages-item:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item:nth-child(3) {
+.advantages-item-third .advantages-item:nth-child(2) {
   background-color: rgba(131, 179, 211, 0.2);
 }
-
+.advantages-img{
+  display: block;
+  height: 100%;
+}
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -274,6 +293,11 @@ body {
   max-width: 175px;
 }
 
+.text-left-img-right .advantages-item-wrapper,
+.text-right-img-left .advantages-item-wrapper{
+  padding: 102px 0;
+
+}
 .advantages-item-wrapper {
   text-align: center;
   vertical-align: middle;
@@ -285,7 +309,7 @@ body {
 }
 
 .service {
-  margin-top: 69px;
+  padding-top: 69px;
   text-align: center;
 }
 
@@ -295,7 +319,8 @@ body {
 }
 
 .service-description {
-  margin: 0 0 64px;
+  max-width: 80%;
+  margin: 0 auto 64px;
 }
 
 .service-list {
@@ -310,9 +335,10 @@ body {
   justify-content: center;
   align-items: center;
   width: 400px;
+  padding: 82px 0;
 }
 
-.service-item:nth-child(2) {
+.service-item:nth-child(2n) {
   background-color: transparent;
 }
 
@@ -336,6 +362,10 @@ body {
 .interest {
   text-align: center;
   padding: 96px 0;
+}
+.interest-title, .mailing-title {
+  margin: 0 auto;
+  max-width: 70%;
 }
 
 .interest-description {
@@ -391,6 +421,7 @@ body {
   border-bottom-left-radius: 4px;
   width: 100%;
   font-size: 18px;
+  height: 100%;
 }
 
 .subscribe_label {
@@ -420,7 +451,8 @@ body {
   color: var(--color-white);
   transform: scale(0.8);
 }
-.mailing-form-email::placeholder{
+
+.mailing-form-email::placeholder {
   opacity: 0;
 }
 
@@ -429,10 +461,12 @@ body {
   line-height: 1;
   text-transform: uppercase;
   font-style: normal;
+  max-width: 400px;
+  display: block;
 }
 
 .page-under-line {
-  margin: 40px 30px;
+  padding: 40px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
