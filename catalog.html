@@ -25,7 +25,7 @@
           <li class="nav-item">
             <a class="a-reset-style nav-link" href="#">
               <span class="visually-hidden">Избранное</span>
-              <span class="favorite-count"><span class="visually-hidden">Количество товаров</span> 12</span>
+              <span class="favorite-count"><span class="visually-hidden">вы выбрали</span> 12<span class="visually-hidden">гостинниц</span></span>
             </a>
           </li>
           <li class="nav-item"><a class="nav-link btn btn-header-popup" href="#">Хочу сюда!</a></li>
@@ -52,20 +52,23 @@
               <legend class="filters-group-caption">Инфраструктура:</legend>
               <ul class="ul-reset-style filter-group-list">
                 <li class="filter-group-item">
-                  <label class="filters-group-label" for="checkbox-pool">Бассейн
+                  <label class="filters-group-label" for="checkbox-pool">
                     <input class="filter-checkbox filter-control-input" id="checkbox-pool" type="checkbox" name="pool"
                       checked>
+                      Бассейн
                   </label>
                 </li>
                 <li class="filter-group-item">
-                  <label class="filters-group-label" for="checkbox-parking">Парковка
+                  <label class="filters-group-label" for="checkbox-parking">
                     <input class="filter-checkbox filter-control-input" id="checkbox-parking" type="checkbox"
                       name="parking">
+                      Парковка
                   </label>
                 </li>
                 <li class="filter-group-item">
-                  <label class="filters-group-label" for="checkbox-wifi">Wi-Fi
+                  <label class="filters-group-label" for="checkbox-wifi">
                     <input class="filter-checkbox filter-control-input" id="checkbox-wifi" type="checkbox" name="wifi">
+                    Wi-Fi
                   </label>
                 </li>
               </ul>
@@ -74,40 +77,47 @@
               <legend class="filters-group-caption">Тип жилья:</legend>
               <ul class="ul-reset-style filter-group-list">
                 <li class="filter-group-item">
-                  <label class="filters-group-label" for="radio-hotel">Гостиница
+                  <label class="filters-group-label" for="radio-hotel">
                     <input class="filter-checkbox filter-control-input" id="radio-hotel" type="radio" name="livingType"
                       value="hotel" checked>
+                      Гостиница
                   </label>
                 </li>
                 <li class="filter-group-item">
-                  <label class="filters-group-label" for="radio-motel">Мотель
+                  <label class="filters-group-label" for="radio-motel">
                     <input class="filter-checkbox filter-control-input" id="radio-motel" type="radio" name="livingType"
                       value="motel">
+                      Мотель
                   </label>
                 </li>
                 <li class="filter-group-item">
-                  <label class="filters-group-label" for="radio-apartments">Апартаменты
+                  <label class="filters-group-label" for="radio-apartments">
                     <input class="filter-checkbox filter-control-input" id="radio-apartments" type="radio"
                       name="livingType" value="apartments">
+                      Апартаменты
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filters-group">
+            <fieldset class="filters-group filters-cost">
               <legend class="filters-group-caption">Стоимость, &#8381;:</legend>
 
-              <label class="filters-group-label" for="input-min-price">от
-                <input class="filter-input filter-control-input" id="input-min-price" type="number" name="min-price"
-                  min="0" max="10000" placeholder="0">
+              <label class="filters-group-label" for="input-min-price">
+                <input class="filter-input filter-control-input input-min-price" id="input-min-price" type="number" name="min-price"
+                  min="0" max="10000" placeholder="0" value="0"><span class="price-label">от</span>
               </label>
-              <label class="filters-group-label" for="input-max-price">до
-                <input class="filter-input filter-control-input" id="input-max-price" type="number" name="max-price"
-                  min="0" max="10000" placeholder="10000">
+              <label class="filters-group-label" for="input-max-price">
+                <input class="filter-input filter-control-input input-max-price" id="input-max-price" type="number" name="max-price"
+                  min="0" max="10000" placeholder="10000" value="10000"><span class="price-label">до</span>
+              </label>
+              <label class="filters-group-label range-group-label" for="range"><span class="visually-hidden">Ползунок</span>
+                <input class="filter-control-input" type="range" id="range" name="volume" min="0" max="10000">
               </label>
             </fieldset>
-
-            <button class="btn btn-send" type="submit">Применить</button>
-            <button class="btn btn-reset" type="reset">Сбросить</button>
+            <div class="btn-filter-container">
+              <button class="btn btn-send" type="submit">Применить</button>
+              <button class="btn btn-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
       </div>
@@ -162,7 +172,7 @@
             <p class="product-item-type">Гостиница</p>
             <p class="product-item-price">От 5000 &#8381;</p>
             <a class="a-reset-style btn product-item-more" href="#">подробнее</a>
-            <button class="btn product-item-add-favorite" type="button">в избранное</button>
+            <button class="btn product-item-add-favorite product-item-favorite-active" type="button">в избранном</button>
             <p class="product-item-stars four-stars"><span class="visually-hidden">Отель 4 звезды</span></p>
             <p class="product-item-rating">Рейтинг: 9,2</p>
           </li>
@@ -229,8 +239,8 @@
         <p class="mailing-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="subscribe_label" for="sub_email">
-          <span class="mailing-label">Ваш e-mail</span>
-          <input class="mailing-form-email" type="email" name="email" id="sub_email" placeholder="example@gmail.com" required>
+            <input class="mailing-form-email" type="email" name="email" id="sub_email" placeholder="example@gmail.com" required>
+            <span class="mailing-label">Ваш e-mail</span>
           </label>
           <button class="btn mailing-form-submit" type="submit">Подписаться</button>
         </form>
