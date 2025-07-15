@@ -28,7 +28,7 @@
               <span class="favorite-count"><span class="visually-hidden">вы выбрали</span> 12<span class="visually-hidden">гостинниц</span></span>
             </a>
           </li>
-          <li class="nav-item"><a class="btn btn-header-popup" href="#">Хочу сюда!</a></li>
+          <li class="nav-item"><a class="btn btn-header-popup btn-type-1" href="#">Хочу сюда!</a></li>
         </ul>
 
       </nav>
@@ -42,7 +42,7 @@
             <a class="a-reset-style breadcrumbs-link breadcrumbs-home" href="index.html"><span class="visually-hidden">Главная</span></a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="a-reset-style breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
+            <a class="a-reset-style breadcrumbs-link breadcrumbs-link-active" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
         <section class="filters">
@@ -115,7 +115,7 @@
               </label>
             </fieldset>
             <div class="btn-filter-container">
-              <button class="btn btn-send" type="submit">Применить</button>
+              <button class="btn btn-send btn-type-2" type="submit">Применить</button>
               <button class="btn btn-reset" type="reset">Сбросить</button>
             </div>
           </form>
@@ -156,8 +156,8 @@
             </a>
             <p class="product-item-type">Гостиница</p>
             <p class="product-item-price">От 4000 &#8381;</p>
-            <a class="a-reset-style btn product-item-more" href="#">подробнее</a>
-            <button class="btn product-item-add-favorite" type="button">в избранное</button>
+            <a class="a-reset-style btn product-item-more btn-type-1" href="#">подробнее</a>
+            <button class="btn product-item-add-favorite btn-type-2" type="button">в избранное</button>
             <p class="product-item-stars four-stars"><span class="visually-hidden">Отель 4 звезды</span></p>
             <p class="product-item-rating">Рейтинг: 8,5</p>
           </li>
@@ -171,8 +171,8 @@
             </a>
             <p class="product-item-type">Гостиница</p>
             <p class="product-item-price">От 5000 &#8381;</p>
-            <a class="a-reset-style btn product-item-more" href="#">подробнее</a>
-            <button class="btn product-item-add-favorite product-item-favorite-active" type="button">в избранном</button>
+            <a class="a-reset-style btn product-item-more btn-type-1" href="#">подробнее</a>
+            <button class="btn product-item-add-favorite product-item-favorite-active btn-type-3" type="button">в избранном</button>
             <p class="product-item-stars four-stars"><span class="visually-hidden">Отель 4 звезды</span></p>
             <p class="product-item-rating">Рейтинг: 9,2</p>
           </li>
@@ -186,8 +186,8 @@
             </a>
             <p class="product-item-type">Гостиница</p>
             <p class="product-item-price">От 2500 &#8381;</p>
-            <a class="a-reset-style btn product-item-more" href="#">подробнее</a>
-            <button class="btn product-item-add-favorite" type="button">в избранное</button>
+            <a class="a-reset-style btn product-item-more btn-type-1" href="#">подробнее</a>
+            <button class="btn product-item-add-favorite btn-type-2" type="button">в избранное</button>
             <p class="product-item-stars three-stars"><span class="visually-hidden">Отель 3 звезды</span></p>
             <p class="product-item-rating">Рейтинг: 6,9</p>
           </li>
@@ -201,8 +201,8 @@
             </a>
             <p class="product-item-type">Гостиница</p>
             <p class="product-item-price">От 1500 &#8381;</p>
-            <a class="a-reset-style btn product-item-more" href="#">подробнее</a>
-            <button class="btn product-item-add-favorite" type="button">в избранное</button>
+            <a class="a-reset-style btn product-item-more btn-type-1" href="#">подробнее</a>
+            <button class="btn product-item-add-favorite btn-type-2" type="button">в избранное</button>
             <p class="product-item-stars four-stars"><span class="visually-hidden">Отель 4 звезды</span></p>
             <p class="product-item-rating">Рейтинг: 5,0</p>
           </li>
@@ -211,22 +211,22 @@
         <footer class="products-footer">
           <ul class="ul-reset-style products-pagination">
             <li class="products-pagination-item">
-              <a class="a-reset-style products-pagination-link products-pagination-link-active" href="#">1</a>
+              <a class="a-reset-style products-pagination-link btn-type-2 products-pagination-link-active" href="#">1</a>
             </li>
             <li class="products-pagination-item">
-              <a class="a-reset-style products-pagination-link" href="#">2</a>
+              <a class="a-reset-style products-pagination-link btn-type-2" href="#">2</a>
             </li>
             <li class="products-pagination-item">
-              <a class="a-reset-style products-pagination-link" href="#">3</a>
+              <a class="a-reset-style products-pagination-link btn-type-2" href="#">3</a>
             </li>
             <li class="products-pagination-item">
-              <a class="a-reset-style products-pagination-link" href="#">4</a>
+              <a class="a-reset-style products-pagination-link btn-type-2" href="#">4</a>
             </li>
             <li class="products-pagination-item">
               <span class="products-pagination-points">...</span>
             </li>
             <li class="products-pagination-item">
-              <a class="a-reset-style products-pagination-link" href="#">10</a>
+              <a class="a-reset-style products-pagination-link btn-type-2" href="#">10</a>
             </li>
           </ul>
         </footer>
@@ -242,7 +242,7 @@
             <input class="mailing-form-email" type="email" name="email" id="sub_email" placeholder="example@gmail.com" required>
             <span class="mailing-label">Ваш e-mail</span>
           </label>
-          <button class="btn mailing-form-submit" type="submit">Подписаться</button>
+          <button class="btn mailing-form-submit btn-type-2" type="submit">Подписаться</button>
         </form>
       </section>
 
