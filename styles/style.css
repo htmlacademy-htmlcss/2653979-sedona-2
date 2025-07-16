@@ -150,6 +150,10 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.products-pagination-link-active:hover, .products-pagination-link-active:focus{
+  cursor: default;
+  background-color: var(--color-ultra-ligth-gray);
+}
 .btn-type-3 {
   background-color: var(--color-green);
 }
@@ -807,7 +811,7 @@ body {
 .products-item-link {
   grid-column: 1 / -1;
   display: block;
-  width: 100%;
+  width: max-content;
 }
 
 .products-item-container-img {
