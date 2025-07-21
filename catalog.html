@@ -299,6 +299,51 @@
         </section>
       </footer>
     </div>
+
+
+        <div class="modal-wrapper">
+      <section class="modal-container">
+        <button type="button" class="modal-btn-close"><span class="visually-hidden">Закрыть</span></button>
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="modal-form" action="post">
+          <label class="modal-label" for="input-date-first">
+            Дата заезда:
+          </label>
+          <div class="modal-field-wrapper">
+            <input class="modal-form-input" id="input-date-first" name="date-in" type="date" value="2020-04-27" placeholder="гггг-мм-дд" required>
+            <span class="modal-label-description modal-label-warning">Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <label class="modal-label" for="input-date-sechond">
+            Дата выезда:
+          </label>
+          <div class="modal-field-wrapper">
+            <input class="modal-form-input" id="input-date-sechond" name="date-out" type="date" value="2023-01-09" placeholder="гггг-мм-дд" required>
+            <span class="modal-label-description">На эти даты есть свободные номера. Пока
+              есть.</span>
+            </div>
+
+            <label class="modal-label modal-label-adults" for="adults">
+              Взрослые:
+            </label>
+            <div class="modal-count-wrapper modal-count-wrapper-adults">
+              <input class="modal-form-input adults" id="adults" name="adults" type="number" value="2" placeholder="1">
+              <button class="button-count button-minus"><span class="visually-hidden">Убавить</span></button>
+              <button class="button-count button-plus"><span class="visually-hidden">Прибавить</span></button>
+            </div>
+
+            <label class="modal-label modal-label-children" for="children">
+              Дети:
+            </label>
+            <div class="modal-count-wrapper modal-count-wrapper-children">
+              <input class="modal-form-input children" id="children" name="children" type="number" value="2" placeholder="1">
+              <button class="button-count button-minus"><span class="visually-hidden">Убавить</span></button>
+              <button class="button-count button-plus"><span class="visually-hidden">Прибавить</span></button>
+            </div>
+
+            <button class="button modal-form-button" type="button">Найти</button>
+        </form>
+      </section>
+    </div>
   </body>
 
 </html>
