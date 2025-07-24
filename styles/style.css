@@ -1074,7 +1074,7 @@ body {
   display: block;
 }
 
-.developer-logo svg path {
+.developer-logo path {
   transition: fill 0.3s;
 }
 
@@ -1432,8 +1432,8 @@ body {
   background: url("../images/icons/cross.svg") no-repeat center / 14px 14px, #e5e5e5;
 }
 
-.developer-logo:hover svg path,
-.developer-logo:focus-visible svg path {
+.developer-logo:hover path,
+.developer-logo:focus-visible path {
   fill: var(--color-btn-basic);
 }
 
@@ -1510,7 +1510,7 @@ body {
   opacity: 0.3;
 }
 
-.developer-logo:active svg path {
+.developer-logo:active path {
   opacity: 0.3;
 }
 
