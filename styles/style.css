@@ -466,6 +466,7 @@ body {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   background-color: var(--color-basic-background);
+  cursor: pointer;
 }
 
 .mailing-form-email {
