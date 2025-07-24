@@ -12,7 +12,7 @@
 
   <body>
     <div class="site-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="nav">
           <a class="logo" href="index.html">
             <img src="images/logo.svg" alt="Логотип Sedona" width="140" height="71">
@@ -48,7 +48,7 @@
         </nav>
       </header>
 
-      <main class="page-main">
+      <main class="page-main" data-test="main">
         <div class="sorting-block">
           <h1 class="sorting-block-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -61,7 +61,7 @@
               <a class="breadcrumbs-link breadcrumbs-link-active" href="catalog.html" aria-current="page">Гостиницы</a>
             </li>
           </ul>
-          <section class="filters">
+          <section class="filters" data-test="filter">
             <h2 class="title-h2 visually-hidden">Фильтры</h2>
             <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filters-group">
@@ -260,7 +260,7 @@
       </main>
 
       <footer class="inner-footer">
-        <section class="mailing">
+        <section class="mailing" data-test="subscribe">
           <h2 class="title-h2 mailing-title">Подпишитесь на рассылку</h2>
           <p class="mailing-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">

@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Главная</title>
+    <title>Модальное окно</title>
   </head>
-
-  <body>
-    <div class="site-container">
-      <header class="page-header" data-test="header">
+<body>
+        <header class="page-header" data-test="header">
         <nav class="nav">
           <a class="logo" href="index.html">
             <img src="images/logo.svg" alt="Логотип Sedona" width="140" height="71">
           </a>
           <ul class="nav-list-pages-link">
             <li class="nav-item">
-              <a class="nav-link nav-link-active" aria-current="page" href="index.html">Главная</a>
+              <a class="nav-link" href="index.html">Главная</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">О Седоне</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="catalog.html">Гостиницы</a>
+              <a class="nav-link nav-link-active" href="#">Гостиницы</a>
             </li>
           </ul>
           <ul class="nav-list nav-list-user">
@@ -47,71 +44,9 @@
           </ul>
         </nav>
       </header>
-
       <main class="page-main" data-test="main">
-        <section class="welcome" data-test="hero">
-          <h1 class="visually-hidden">городок Sedona</h1>
-          <img class="welcome-img" src="images/index/welcome.svg" alt="Welcome to the gorgeous Sedona, because the Grend Canyon sucks!" width="458" height="352">
-        </section>
-        <section class="advantages" data-test="advantages">
-          <h2 class="title-h2 advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-          <ul class="advantages-list">
-            <li class="advantages-item advantages-img-item">
-              <div class="advantages-item-wrapper">
-                <h3 class="title-h3 advantages-item-title">Настоящий городок</h3>
-                <p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              </div>
-              <img class="advantages-img" src="images/index/gallery-1.jpg" alt="городок Седона" width="800" height="385">
-            </li>
-            <li class="advantages-item advantages-item-third">
-              <h3 class="title-h3 advantages-item-title">Небольшая площадь</h3>
-              <p class="advantages-item-description">Все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="advantages-item advantages-item-third">
-              <h3 class="title-h3 advantages-item-title">Красивая дорога</h3>
-              <p class="advantages-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="advantages-item advantages-item-third">
-              <h3 class="title-h3 advantages-item-title">Мало туристов</h3>
-              <p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
-            <li class="advantages-item advantages-img-item advantages-img-item-reverse">
-              <div class="advantages-item-wrapper">
-                <h3 class="title-h3 advantages-item-title">Там есть мост&nbsp;дьявола</h3>
-                <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              </div>
-              <img class="advantages-img" src="images/index/gallery-2.jpg" alt="вид на мост дьявола" width="800" height="385">
-            </li>
-          </ul>
-        </section>
 
-        <section class="service" data-test="service">
-          <h2 class="title-h2 service-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <p class="service-description">Опытный персонал и качественное обслуживание!</p>
-          <ul class="service-list">
-            <li class="service-item">
-              <h3 class="title-h3 service-item-title service-item-title-home">Жильё</h3>
-              <p class="service-item-description">Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в кино!</p>
-            </li>
-            <li class="service-item">
-              <h3 class="title-h3 service-item-title service-item-title-food">Еда</h3>
-              <p class="service-item-description">Всегда заказывайте топовый&nbsp;фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="service-item">
-              <h3 class="title-h3 service-item-title service-item-title-box">Сувениры</h3>
-              <p class="service-item-description">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
-            </li>
-          </ul>
-        </section>
-
-        <section class="interest" data-test="search">
-          <h2 class="title-h2 interest-title">Заинтересовались?</h2>
-          <p class="interest-description">Укажите предполагаемые даты поездки и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
-          <a class="btn interest-link btn-type-1" href="catalog.html">Поиск гостиницы в Седоне</a>
-        </section>
       </main>
-
       <footer class="page-footer" data-test="footer">
         <section class="mailing" data-test="subscribe">
           <h2 class="title-h2 mailing-title">Подпишитесь на рассылку</h2>
@@ -154,10 +89,9 @@
           </a>
         </div>
       </footer>
-    </div>
 
-    <div class="modal-wrapper modal-close">
-      <section class="modal-container">
+      <div class="modal-wrapper">
+      <section class="modal-container" data-test="modal">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="modal-grid-label" for="date-in">
@@ -204,6 +138,5 @@
         </button>
       </section>
     </div>
-  </body>
-
+</body>
 </html>
