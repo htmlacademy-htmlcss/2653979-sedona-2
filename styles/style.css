@@ -1544,6 +1544,7 @@ body {
 .filters-group-label:active .input-max-price {
   opacity: 0.9;
   background-color: #e6e6e6;
+  box-shadow: none;
 }
 
 .products-header-select:active {
@@ -1559,6 +1560,7 @@ body {
 .filters-group-label:disabled .input-max-price {
   opacity: 0.9;
   background-color: var(--color-form-elements);
+  box-shadow: none;
 }
 
 .btn-type-1:disabled,
