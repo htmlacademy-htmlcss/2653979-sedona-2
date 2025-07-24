@@ -58,14 +58,6 @@ body {
   color: var(--color-text-sechond);
   background-color: var(--color-form-elements);
   margin: 0;
-
-  input {
-    font-family: inherit;
-  }
-
-  select {
-    font-family: inherit;
-  }
 }
 
 .site-container {
@@ -528,6 +520,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 14px 20px;
+  font-family: inherit;
   font-size: 18px;
   border: none;
   border-top-left-radius: 4px;
@@ -717,7 +710,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.filter-input{
+  font-family: inherit;
+}
 .filters-cost .filter-input {
   grid-column: 1;
   grid-row: 1;
@@ -1047,6 +1042,7 @@ body {
   width: 292px;
   margin: 0 40px 0 auto;
   padding: 14px 20px;
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   border: 1px solid var(--color-default);
@@ -1358,6 +1354,7 @@ body {
 
 .modal-grid-input {
   padding: 12px 20px;
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1369,6 +1366,10 @@ body {
 .modal-grid-input:hover,
 .modal-input-count:hover {
   background-color: var(--color-default);
+}
+.modal-grid-input:focus,
+.modal-input-count:focus {
+  z-index: 2;
 }
 
 .modal-grid-input:disabled,
@@ -1396,6 +1397,7 @@ body {
 .modal-control-btn,
 .modal-input-count {
   grid-row: 1;
+  font-family: inherit;
   border: none;
 }
 
