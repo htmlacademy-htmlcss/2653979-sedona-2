@@ -493,20 +493,20 @@ body {
 .mailing-label {
   grid-column: 1;
   grid-row: 1;
-  opacity: 0.6;
+  display: block;
+  padding-left: 20px;
   cursor: text;
   font-size: 18px;
   line-height: 24px;
   text-align: left;
   color: var(--color-basic);
   user-select: none;
-  padding-left: 20px;
-  transition: opacity 0.3s;
+  opacity: 0.6;
 }
 
 .mailing-form-email:not(:placeholder-shown) ~ .mailing-label,
 .mailing-form-email:focus-visible ~ .mailing-label {
-  opacity: 0;
+  display: none;
 }
 
 .mailing-form-email::placeholder {
